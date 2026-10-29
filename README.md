@@ -81,3 +81,8 @@ http-004の報告ハッシュはHTTP版1.1と一致しました。21行をrunへ
 - [更新した論文PDF・19ページ](thesis-guided-runner.pdf)
 
 Python標準ライブラリ、ADB、API 35、PCAPdroid 2.0.2を使います。PCAPdroidの開始・停止・CSV保存と、必要時のブラウザ目視確認は人が担当します。ランナーは固定したHTTP/UDP/通信なしのAPKを対象に、取得前ポリシー・APK/UID/時計・ログ・単発タップ・待機・CSV回収・基本チェック・ZIP作成をまとめます。ホスト側全自動テスト87件（うち11件が模擬ADB/UIを使うランナー試験）が成功。実MacのUI動作は最初の1試行で確認する段階です。
+
+
+## UDPのUnknown帰属を調べる追加条件
+
+[診断手順](UDP_HOLD_DIAGNOSTIC.md) / [2秒保持条件を含むランナーZIP](guided-trial-runner-udp-hold.zip)。同じpackageのUDP版1.2で、ソケット保持待機とログを追加しました。元のUDP版1.1は履歴として残しています。88件のホスト自動テスト、保持版のビルド・署名・静的解析を確認しましたが、端末でUID帰属が改善するかは未検証です。フィルター後のCSVでUIDが判明するまで原因を確定しません。
