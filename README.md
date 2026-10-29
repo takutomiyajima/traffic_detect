@@ -43,3 +43,8 @@ HTTP対照アプリのUIDに一致するCSV行1件と、参照サーバのPOST�
 - [論文修正計画](REVISION_PLAN.md)
 
 測定ツールは標準ライブラリのみで動作し、端末時計・ネットワーク設定を変更しません。開発側の5件のテストと失敗時のCLI動作を確認済みです。実Emulatorの時計測定はこれから行います。
+
+
+## Next HTTP trial
+
+[http-004 procedure](HTTP_TRIAL_004.md): before/after clock samples, continuous logcat, browser controls, PCAPdroid export, and screenshots.
