@@ -86,3 +86,14 @@ Python標準ライブラリ、ADB、API 35、PCAPdroid 2.0.2を使います。PC
 ## UDPのUnknown帰属を調べる追加条件
 
 [診断手順](UDP_HOLD_DIAGNOSTIC.md) / [2秒保持条件を含むランナーZIP](guided-trial-runner-udp-hold.zip)。同じpackageのUDP版1.2で、ソケット保持待機とログを追加しました。元のUDP版1.1は履歴として残しています。88件のホスト自動テスト、保持版のビルド・署名・静的解析を確認しましたが、端末でUID帰属が改善するかは未検証です。フィルター後のCSVでUIDが判明するまで原因を確定しません。
+
+
+## 研究進捗と現時点の論文（2026-10-29）
+
+- [進捗・残作業・今後の流れ（PDF 4ページ）](RESEARCH_PROGRESS_2026-10-29.pdf)
+- [進捗のMarkdown](RESEARCH_PROGRESS_2026-10-29.md)
+- [現時点の論文草稿（PDF 22ページ）](THESIS_DRAFT_2026-10-29.pdf)
+- [文書再ビルド用TeX・図表・PDFのZIP](THESIS_SOURCE_2026-10-29.zip)
+- [システムを含む全体ZIP](apk-audit-research-progress.zip)
+
+受領した半自動8試行を照合し、短時間UDP2試行のUID不明と保持UDP4試行の識別を記述しました。版・順序・一部本文長の違い、単一AVDと少数反復、条件付きの時計と取得品質も明記しています。未知アプリ精度、査読関連研究の比較、HTTPS等の本評価、著者情報・大学様式は今後反映する草稿です。文書ZIPを別の場所へ展開し、両PDFが再生成できることを確認しました。受領原本ログ・画面の全文は公開ZIPへ追加していません。
