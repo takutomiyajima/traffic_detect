@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "app_purpose": "offline-001: 通信を行わずローカル処理を完了する自作対照APK。取得前に固定する説明用ポリシー。",
+  "network": {"mode": "deny_all"},
+  "sdk": {"mode": "unspecified"},
+  "permissions": {"mode": "deny_all"},
+  "cleartext_policy": "forbid",
+  "background_network_policy": "forbid"
+}

@@ -57,3 +57,17 @@ HTTP対照アプリのUIDに一致するCSV行1件と、参照サーバのPOST�
 - [TeX・システム・記録した解析手順のZIP](apk-audit-research-progress.zip)
 
 対象アプリの200応答、UID一致の通信行、サーバPOST、前後のブラウザ対照と時計測定を確認しました。約14秒後の後対照は実験者の実際の操作条件として記録しました。インストールAPKのハッシュ未取得等の残る条件も明記しています。添付ZIPの原本ログ・画面・package情報の全文は公開成果物へ追加していません。
+
+
+## APK同定後の取り込みと次の対照
+
+http-004の報告ハッシュはHTTP版1.1と一致しました。21行をrunへ取り込み、3条件×3証拠方式の事後説明用比較、JSON/CSV/HTML、44索引を確認しました。取得・時計の不確実性はpartialのまま保持し、事前ポリシーへの違反や精度評価とは区別しています。総自動テスト76件が成功しました。
+
+- [更新した18ページPDF](thesis-http-004.pdf)
+- [更新した結果](HTTP_004_RESULTS.md)
+- [システム・TeXのZIP](apk-audit-research-progress.zip)
+- [通信なし対照APK](offline-control.apk)
+- [offline-001の実験手順](OFFLINE_TRIAL_001.md)
+- [取得前に固定したoffline-001ポリシー](OFFLINE_001_POLICY.json)
+
+ビルドinventoryのruntime_statusはビルド時点の履歴です。現在の観測結果はHTTP_004_RESULTS.mdを参照してください。実験者の原本ログ・画面全文と原本リンク付きの研究者用HTMLは公開ZIPへ追加していません。
