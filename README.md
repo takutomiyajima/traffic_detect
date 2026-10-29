@@ -48,3 +48,12 @@ HTTP対照アプリのUIDに一致するCSV行1件と、参照サーバのPOST�
 ## Next HTTP trial
 
 [http-004 procedure](HTTP_TRIAL_004.md): before/after clock samples, continuous logcat, browser controls, PCAPdroid export, and screenshots.
+
+
+## http-004の解析結果（2026-10-29）
+
+- [結果と実際の操作条件](HTTP_004_RESULTS.md)
+- [更新した卒論用PDF・18ページ](thesis-http-004.pdf)
+- [TeX・システム・記録した解析手順のZIP](apk-audit-research-progress.zip)
+
+対象アプリの200応答、UID一致の通信行、サーバPOST、前後のブラウザ対照と時計測定を確認しました。約14秒後の後対照は実験者の実際の操作条件として記録しました。インストールAPKのハッシュ未取得等の残る条件も明記しています。添付ZIPの原本ログ・画面・package情報の全文は公開成果物へ追加していません。
