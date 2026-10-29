@@ -25,3 +25,12 @@ ZIPを展開するとtraffic_detectフォルダが作成されます。
 - APK SHA-256: `7c7f24e82c80fb1e51df96923dda326571d3c706d496e03efb6373647df01382`
 - ZIP SHA-256: `3d87aa7aa99bf53688a21d17dc461b596a8561e18ae12e82ab33ac1e86ed2481`
 - Android上の通信取得・UID帰属の全受入試験や未知アプリの精度評価は未完了です。
+
+
+## 2026-10-29 HTTP初回観測の追記
+
+- [今回の観測結果](http-pilot-report.md)
+- [更新した卒論用PDF](thesis-http-pilot.pdf)
+- [TeXとシステムを含むZIP](apk-audit-research-progress.zip)
+
+HTTP対照アプリのUIDに一致するCSV行1件と、参照サーバのPOST受信を確認しました。時計差・取得区間・前後対照が未確認の初回観測として記載し、本評価の精度指標には算入していません。今回添付された原本ログとpackage情報の全文は公開成果物に追加していません。
