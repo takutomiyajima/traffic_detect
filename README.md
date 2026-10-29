@@ -34,3 +34,12 @@ ZIPを展開するとtraffic_detectフォルダが作成されます。
 - [TeXとシステムを含むZIP](apk-audit-research-progress.zip)
 
 HTTP対照アプリのUIDに一致するCSV行1件と、参照サーバのPOST受信を確認しました。時計差・取得区間・前後対照が未確認の初回観測として記載し、本評価の精度指標には算入していません。今回添付された原本ログとpackage情報の全文は公開成果物に追加していません。
+
+
+## 時計差測定と修正計画
+
+- [時計差測定の単独Pythonファイル](measure_android_clock.py)
+- [測定手順と制約](CLOCK_MEASUREMENT.md)
+- [論文修正計画](REVISION_PLAN.md)
+
+測定ツールは標準ライブラリのみで動作し、端末時計・ネットワーク設定を変更しません。開発側の5件のテストと失敗時のCLI動作を確認済みです。実Emulatorの時計測定はこれから行います。
