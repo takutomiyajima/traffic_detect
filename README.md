@@ -71,3 +71,13 @@ http-004の報告ハッシュはHTTP版1.1と一致しました。21行をrunへ
 - [取得前に固定したoffline-001ポリシー](OFFLINE_001_POLICY.json)
 
 ビルドinventoryのruntime_statusはビルド時点の履歴です。現在の観測結果はHTTP_004_RESULTS.mdを参照してください。実験者の原本ログ・画面全文と原本リンク付きの研究者用HTMLは公開ZIPへ追加していません。
+
+
+## PCAPdroidを手動操作する半自動ランナー
+
+- [小型ランナーZIP](guided-trial-runner.zip)
+- [導入と実行手順](GUIDED_TRIALS.md)
+- [システム・TeX全体](apk-audit-research-progress.zip)
+- [更新した論文PDF・19ページ](thesis-guided-runner.pdf)
+
+Python標準ライブラリ、ADB、API 35、PCAPdroid 2.0.2を使います。PCAPdroidの開始・停止・CSV保存と、必要時のブラウザ目視確認は人が担当します。ランナーは固定したHTTP/UDP/通信なしのAPKを対象に、取得前ポリシー・APK/UID/時計・ログ・単発タップ・待機・CSV回収・基本チェック・ZIP作成をまとめます。ホスト側全自動テスト87件（うち11件が模擬ADB/UIを使うランナー試験）が成功。実MacのUI動作は最初の1試行で確認する段階です。
