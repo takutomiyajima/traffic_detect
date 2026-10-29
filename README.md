@@ -1,16 +1,27 @@
-# APK通信と開発意図の照合支援システム — ダウンロード
+# APK監査システム — ダウンロード
 
-[システム・評価用APK・論文・手順書一式をダウンロード](apk-audit-research-progress.zip?raw=true)
+## 制御APKの画面修正版 1.1
 
-ZIPを展開すると `traffic_detect` フォルダが作成されます。
-最初に `docs/research/manual-handoff.md` を開いてください。
-論文は `docs/thesis.pdf`、TeX原稿は `docs/thesis.tex` です。
+[HTTP制御APKをダウンロード](http-ui-fixed.apk?raw=true)
 
-- ファイル名: `apk-audit-research-progress.zip`
-- サイズ: 792,234 bytes
-- SHA-256: `c3be16a9881b6c30eeb2097f4407ce5ae11ebd4b20eb8bc19816b4a2dae2ea32`
-- 含むもの: Pythonソース、自作評価用APK、静的検証記録、参照サーバ、16ページの論文、手作業ガイド
-- 検証範囲: 自作10 APKの静的103項目、自動テスト65件、ホスト内HTTP/HTTPS/UDP試験
-- Android上の通信取得・UID帰属、未知アプリへの精度評価は未実施です。
+旧版でタイトルバーに隠れていた操作ボタンを表示するため、NoActionBarと画面Insetsを明示しました。
+ボタンの表記は「通信を実行 / Run test」です。
+ビルド・署名・静的103項目を確認しました。修正版の端末画面は利用者側で確認してください。
 
-このブランチは作成済み成果物の配布用です。
+```bash
+adb -s emulator-5554 install -r "$HOME/Downloads/http-ui-fixed.apk"
+```
+
+[修正内容と再開手順](UI_FIX.md)
+
+## システム・資料・評価素材一式
+
+[更新済みZIPをダウンロード](apk-audit-research-progress.zip?raw=true)
+
+ZIPを展開するとtraffic_detectフォルダが作成されます。
+画面修正版はruns/control-apks-v3-ui、旧素材はruns/control-apks-v2です。
+旧素材の検証記録は維持しています。論文PDFの実測は修正前の検証で、今回の画面修正とは別です。
+
+- APK SHA-256: `7c7f24e82c80fb1e51df96923dda326571d3c706d496e03efb6373647df01382`
+- ZIP SHA-256: `3d87aa7aa99bf53688a21d17dc461b596a8561e18ae12e82ab33ac1e86ed2481`
+- Android上の通信取得・UID帰属の全受入試験や未知アプリの精度評価は未完了です。
