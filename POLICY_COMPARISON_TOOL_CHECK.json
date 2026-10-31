@@ -1,0 +1,26 @@
+{
+  "date_jst": "2026-10-31",
+  "kind": "offline_operational_verification_not_accuracy_evaluation",
+  "new_android_trials": 0,
+  "reports": 27,
+  "checks": [
+    {
+      "case": "http",
+      "comparison_reports": 9,
+      "evidence_hashes_verified": true,
+      "expected_scope_and_unknown_handling": true
+    },
+    {
+      "case": "udp",
+      "comparison_reports": 9,
+      "evidence_hashes_verified": true,
+      "expected_scope_and_unknown_handling": true
+    },
+    {
+      "case": "udp_hold",
+      "comparison_reports": 9,
+      "evidence_hashes_verified": true,
+      "expected_scope_and_unknown_handling": true
+    }
+  ]
+}
