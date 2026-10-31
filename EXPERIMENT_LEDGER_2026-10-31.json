@@ -1,0 +1,986 @@
+{
+  "schema_version": "1.1",
+  "review_date_jst": "2026-10-31",
+  "dataset_scope": "Received guided trials, deduplicated by trial ID and identical archive hash; primary uploaded nine distinguished from earlier pilots",
+  "primary_trial_ids": [
+    "http-test-001",
+    "http-test-002",
+    "http-test-003",
+    "udp-hold-001",
+    "udp-hold-002",
+    "udp-hold-003",
+    "udp-short-001",
+    "udp-short-002",
+    "udp-short-003"
+  ],
+  "trials": [
+    {
+      "trial_id": "http-auto-001",
+      "case": "http",
+      "created_utc": "2026-10-29T12:39:23.752030+00:00",
+      "app_version": "1.1",
+      "apk_sha256": "7c7f24e82c80fb1e51df96923dda326571d3c706d496e03efb6373647df01382",
+      "policy_sha256": "9bf2d2b631e539d14100ddfb52e1ab0c405bf7609bc3c149d0fd3521c0712627",
+      "archive_sha256": "1dedf88a71a840719a3de53bddd49fe510046a307c18ad1787996d2d2a12c6bc",
+      "uid": 10207,
+      "csv_rows": 13,
+      "candidate_rows": [
+        {
+          "line": 4,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 1164,
+          "bytes_received": 804,
+          "packets_sent": 7,
+          "packets_received": 7
+        },
+        {
+          "line": 7,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 140,
+          "bytes_received": 128,
+          "packets_sent": 3,
+          "packets_received": 3
+        },
+        {
+          "line": 9,
+          "uid": 10207,
+          "package": "org.example.apkaudit.http",
+          "bytes_sent": 516,
+          "bytes_received": 466,
+          "packets_sent": 5,
+          "packets_received": 5
+        },
+        {
+          "line": 10,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 1202,
+          "bytes_received": 804,
+          "packets_sent": 8,
+          "packets_received": 7
+        },
+        {
+          "line": 13,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 140,
+          "bytes_received": 128,
+          "packets_sent": 3,
+          "packets_received": 3
+        }
+      ],
+      "identified_target_rows": 1,
+      "server_events": 1,
+      "server_body_bytes": [
+        19
+      ],
+      "app_result": "http_response=200",
+      "hold_observed_s": null,
+      "wait_s": 30.003888708997692,
+      "quality": "partial",
+      "coverage_status": "operator_attested",
+      "checks": "expectations_met_under_recorded_conditions",
+      "status": "collected",
+      "recorded_problems": [],
+      "control_verification": {
+        "after": "ui_and_server_event_id",
+        "before": "ui_and_server_event_id"
+      },
+      "manifest_entries": 28,
+      "clock_summaries_recomputed": {
+        "before": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.160312243,
+          "offset_upper_s": 0.227599452,
+          "offset_midpoint_s": 0.1939558475,
+          "batch_half_width_s": 0.0336436045,
+          "reasons": []
+        },
+        "after": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.195387544,
+          "offset_upper_s": 0.222987545,
+          "offset_midpoint_s": 0.2091875445,
+          "batch_half_width_s": 0.0138000005,
+          "reasons": []
+        }
+      },
+      "verification": "manifest_apk_uid_policy_clock_server_log_ui_csv_controls_rechecked"
+    },
+    {
+      "trial_id": "http-test-001",
+      "case": "http",
+      "created_utc": "2026-10-31T01:34:11.121147+00:00",
+      "app_version": "1.1",
+      "apk_sha256": "7c7f24e82c80fb1e51df96923dda326571d3c706d496e03efb6373647df01382",
+      "policy_sha256": "9bf2d2b631e539d14100ddfb52e1ab0c405bf7609bc3c149d0fd3521c0712627",
+      "archive_sha256": "b4bd4c3eb73008a3be3af2252e587f8a7ed633a4105e883af4acb630d3e23d05",
+      "uid": 10207,
+      "csv_rows": 21,
+      "candidate_rows": [
+        {
+          "line": 7,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 1204,
+          "bytes_received": 804,
+          "packets_sent": 8,
+          "packets_received": 7
+        },
+        {
+          "line": 8,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 140,
+          "bytes_received": 128,
+          "packets_sent": 3,
+          "packets_received": 3
+        },
+        {
+          "line": 17,
+          "uid": 10207,
+          "package": "org.example.apkaudit.http",
+          "bytes_sent": 516,
+          "bytes_received": 466,
+          "packets_sent": 5,
+          "packets_received": 5
+        },
+        {
+          "line": 18,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 1202,
+          "bytes_received": 804,
+          "packets_sent": 8,
+          "packets_received": 7
+        },
+        {
+          "line": 21,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 140,
+          "bytes_received": 128,
+          "packets_sent": 3,
+          "packets_received": 3
+        }
+      ],
+      "identified_target_rows": 1,
+      "server_events": 1,
+      "server_body_bytes": [
+        19
+      ],
+      "app_result": "http_response=200",
+      "hold_observed_s": null,
+      "wait_s": 30.005082707997644,
+      "quality": "partial",
+      "coverage_status": "operator_attested",
+      "checks": "expectations_met_under_recorded_conditions",
+      "status": "collected",
+      "recorded_problems": [],
+      "control_verification": {
+        "after": "ui_and_server_event_id",
+        "before": "operator_visual_attestation_and_new_server_get"
+      },
+      "manifest_entries": 28,
+      "clock_summaries_recomputed": {
+        "before": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": -0.149786809,
+          "offset_upper_s": -0.131120558,
+          "offset_midpoint_s": -0.1404536835,
+          "batch_half_width_s": 0.0093331255,
+          "reasons": []
+        },
+        "after": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": -0.158865392,
+          "offset_upper_s": -0.130755682,
+          "offset_midpoint_s": -0.144810537,
+          "batch_half_width_s": 0.014054855,
+          "reasons": []
+        }
+      },
+      "verification": "manifest_apk_uid_policy_clock_server_log_ui_csv_controls_rechecked"
+    },
+    {
+      "trial_id": "http-test-002",
+      "case": "http",
+      "created_utc": "2026-10-31T01:36:21.693888+00:00",
+      "app_version": "1.1",
+      "apk_sha256": "7c7f24e82c80fb1e51df96923dda326571d3c706d496e03efb6373647df01382",
+      "policy_sha256": "9bf2d2b631e539d14100ddfb52e1ab0c405bf7609bc3c149d0fd3521c0712627",
+      "archive_sha256": "509676e91f561ac24fd560c082613bf68fed03f17b42f22802b2e6a4eb233a63",
+      "uid": 10207,
+      "csv_rows": 18,
+      "candidate_rows": [
+        {
+          "line": 4,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 1164,
+          "bytes_received": 804,
+          "packets_sent": 7,
+          "packets_received": 7
+        },
+        {
+          "line": 7,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 140,
+          "bytes_received": 128,
+          "packets_sent": 3,
+          "packets_received": 3
+        },
+        {
+          "line": 14,
+          "uid": 10207,
+          "package": "org.example.apkaudit.http",
+          "bytes_sent": 516,
+          "bytes_received": 466,
+          "packets_sent": 5,
+          "packets_received": 5
+        },
+        {
+          "line": 15,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 1202,
+          "bytes_received": 804,
+          "packets_sent": 8,
+          "packets_received": 7
+        },
+        {
+          "line": 18,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 140,
+          "bytes_received": 128,
+          "packets_sent": 3,
+          "packets_received": 3
+        }
+      ],
+      "identified_target_rows": 1,
+      "server_events": 1,
+      "server_body_bytes": [
+        19
+      ],
+      "app_result": "http_response=200",
+      "hold_observed_s": null,
+      "wait_s": 30.003985208000813,
+      "quality": "partial",
+      "coverage_status": "operator_attested",
+      "checks": "expectations_met_under_recorded_conditions",
+      "status": "collected",
+      "recorded_problems": [],
+      "control_verification": {
+        "after": "ui_and_server_event_id",
+        "before": "ui_and_server_event_id"
+      },
+      "manifest_entries": 28,
+      "clock_summaries_recomputed": {
+        "before": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": -0.148434996,
+          "offset_upper_s": -0.131583995,
+          "offset_midpoint_s": -0.1400094955,
+          "batch_half_width_s": 0.0084255005,
+          "reasons": []
+        },
+        "after": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": -0.150812362,
+          "offset_upper_s": -0.128106361,
+          "offset_midpoint_s": -0.1394593615,
+          "batch_half_width_s": 0.0113530005,
+          "reasons": []
+        }
+      },
+      "verification": "manifest_apk_uid_policy_clock_server_log_ui_csv_controls_rechecked"
+    },
+    {
+      "trial_id": "http-test-003",
+      "case": "http",
+      "created_utc": "2026-10-31T01:38:33.295872+00:00",
+      "app_version": "1.1",
+      "apk_sha256": "7c7f24e82c80fb1e51df96923dda326571d3c706d496e03efb6373647df01382",
+      "policy_sha256": "9bf2d2b631e539d14100ddfb52e1ab0c405bf7609bc3c149d0fd3521c0712627",
+      "archive_sha256": "1288096309d455de8c3e70ff7bd5faca250809b8b99b5bc4ab8aacd7e9477943",
+      "uid": 10207,
+      "csv_rows": 13,
+      "candidate_rows": [
+        {
+          "line": 4,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 1164,
+          "bytes_received": 804,
+          "packets_sent": 7,
+          "packets_received": 7
+        },
+        {
+          "line": 7,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 140,
+          "bytes_received": 128,
+          "packets_sent": 3,
+          "packets_received": 3
+        },
+        {
+          "line": 9,
+          "uid": 10207,
+          "package": "org.example.apkaudit.http",
+          "bytes_sent": 516,
+          "bytes_received": 466,
+          "packets_sent": 5,
+          "packets_received": 5
+        },
+        {
+          "line": 10,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 1202,
+          "bytes_received": 804,
+          "packets_sent": 8,
+          "packets_received": 7
+        },
+        {
+          "line": 13,
+          "uid": 10150,
+          "package": "com.android.chrome",
+          "bytes_sent": 140,
+          "bytes_received": 128,
+          "packets_sent": 3,
+          "packets_received": 3
+        }
+      ],
+      "identified_target_rows": 1,
+      "server_events": 1,
+      "server_body_bytes": [
+        19
+      ],
+      "app_result": "http_response=200",
+      "hold_observed_s": null,
+      "wait_s": 30.005124750001414,
+      "quality": "partial",
+      "coverage_status": "operator_attested",
+      "checks": "expectations_met_under_recorded_conditions",
+      "status": "collected",
+      "recorded_problems": [],
+      "control_verification": {
+        "after": "ui_and_server_event_id",
+        "before": "ui_and_server_event_id"
+      },
+      "manifest_entries": 28,
+      "clock_summaries_recomputed": {
+        "before": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": -0.190725393,
+          "offset_upper_s": -0.124475392,
+          "offset_midpoint_s": -0.1576003925,
+          "batch_half_width_s": 0.0331250005,
+          "reasons": []
+        },
+        "after": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": -0.156386213,
+          "offset_upper_s": -0.128296254,
+          "offset_midpoint_s": -0.1423412335,
+          "batch_half_width_s": 0.0140449795,
+          "reasons": []
+        }
+      },
+      "verification": "manifest_apk_uid_policy_clock_server_log_ui_csv_controls_rechecked"
+    },
+    {
+      "trial_id": "offline-auto-001",
+      "case": "offline",
+      "created_utc": "2026-10-29T11:27:26.894785+00:00",
+      "app_version": "1.1",
+      "apk_sha256": "39dd104a69408f8f49a60934388933c2dd2cf855c1abed2faf0f3147d75f6280",
+      "policy_sha256": "af3011d5dd091826865b23860831c894917b7d60e3002f6d35445348e98f9e45",
+      "archive_sha256": "308275db0489e2c20ec549a4de06cbf597312cc7665a7ea4099c3bbd2d58840a",
+      "uid": 10209,
+      "csv_rows": 24,
+      "candidate_rows": [],
+      "identified_target_rows": 0,
+      "server_events": 0,
+      "server_body_bytes": [],
+      "app_result": "local_only_completed",
+      "hold_observed_s": null,
+      "wait_s": 30.000758417001634,
+      "quality": "partial",
+      "coverage_status": "operator_attested",
+      "checks": "expectations_met_under_recorded_conditions",
+      "status": "collected",
+      "recorded_problems": [],
+      "control_verification": {
+        "after": "ui_and_server_event_id",
+        "before": "operator_visual_attestation_and_new_server_get"
+      },
+      "manifest_entries": 28,
+      "clock_summaries_recomputed": {
+        "before": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.221526052,
+          "offset_upper_s": 0.238110012,
+          "offset_midpoint_s": 0.229818032,
+          "batch_half_width_s": 0.00829198,
+          "reasons": []
+        },
+        "after": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.213499712,
+          "offset_upper_s": 0.238422547,
+          "offset_midpoint_s": 0.2259611295,
+          "batch_half_width_s": 0.0124614175,
+          "reasons": []
+        }
+      },
+      "verification": "manifest_apk_uid_policy_clock_server_log_ui_csv_controls_rechecked"
+    },
+    {
+      "trial_id": "udp-auto-001",
+      "case": "udp",
+      "created_utc": "2026-10-29T11:44:31.380823+00:00",
+      "app_version": "1.1",
+      "apk_sha256": "360dc7df93299f48b9b158a48de3e1f0d7cf570b57940e1b8d16cf15e12ad359",
+      "policy_sha256": "b6ef47322bef7539f9b46dff952a314439df5a9817d7ea9dcf8d200fa69ad7c1",
+      "archive_sha256": "90c2784cb4c1b7b9e37d93f4229d998da6b45fdfe1df879d5d89ec4c58ea3f96",
+      "uid": 10210,
+      "csv_rows": 37,
+      "candidate_rows": [
+        {
+          "line": 20,
+          "uid": -1,
+          "package": "unknown",
+          "bytes_sent": 46,
+          "bytes_received": 37,
+          "packets_sent": 1,
+          "packets_received": 1
+        }
+      ],
+      "identified_target_rows": 0,
+      "server_events": 1,
+      "server_body_bytes": [
+        18
+      ],
+      "app_result": "udp_sent",
+      "hold_observed_s": null,
+      "wait_s": 30.005085250006232,
+      "quality": "partial",
+      "coverage_status": "operator_attested",
+      "checks": "review_required",
+      "status": "collected_needs_review",
+      "recorded_problems": [
+        "expected_target_connection_row_missing"
+      ],
+      "control_verification": {
+        "after": "ui_and_server_event_id",
+        "before": "operator_visual_attestation_and_new_server_get"
+      },
+      "manifest_entries": 28,
+      "clock_summaries_recomputed": {
+        "before": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.170688772,
+          "offset_upper_s": 0.239244439,
+          "offset_midpoint_s": 0.2049666055,
+          "batch_half_width_s": 0.0342778335,
+          "reasons": []
+        },
+        "after": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.205852048,
+          "offset_upper_s": 0.234617049,
+          "offset_midpoint_s": 0.2202345485,
+          "batch_half_width_s": 0.0143825005,
+          "reasons": []
+        }
+      },
+      "verification": "manifest_apk_uid_policy_clock_server_log_ui_csv_controls_rechecked"
+    },
+    {
+      "trial_id": "udp-hold-001",
+      "case": "udp_hold",
+      "created_utc": "2026-10-29T12:15:52.483890+00:00",
+      "app_version": "1.2",
+      "apk_sha256": "1236cb4fe9d3034c6bd5f5726d9402f0ab2f80ca9c30114c27d59fd54d3ec9d7",
+      "policy_sha256": "b6ef47322bef7539f9b46dff952a314439df5a9817d7ea9dcf8d200fa69ad7c1",
+      "archive_sha256": "7f025b5552cca66263beedd563a23680a80751c02a7dbebe5eb9e6b9480f335e",
+      "uid": 10210,
+      "csv_rows": 36,
+      "candidate_rows": [
+        {
+          "line": 28,
+          "uid": 10210,
+          "package": "org.example.apkaudit.udp",
+          "bytes_sent": 46,
+          "bytes_received": 37,
+          "packets_sent": 1,
+          "packets_received": 1
+        }
+      ],
+      "identified_target_rows": 1,
+      "server_events": 1,
+      "server_body_bytes": [
+        18
+      ],
+      "app_result": "udp_sent",
+      "hold_observed_s": 2.002,
+      "wait_s": 30.004307791998144,
+      "quality": "partial",
+      "coverage_status": "operator_attested",
+      "checks": "expectations_met_under_recorded_conditions",
+      "status": "collected",
+      "recorded_problems": [],
+      "control_verification": {
+        "after": "ui_and_server_event_id",
+        "before": "operator_visual_attestation_and_new_server_get"
+      },
+      "manifest_entries": 28,
+      "clock_summaries_recomputed": {
+        "before": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.135088332,
+          "offset_upper_s": 0.233707334,
+          "offset_midpoint_s": 0.184397833,
+          "batch_half_width_s": 0.049309501,
+          "reasons": []
+        },
+        "after": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.199586657,
+          "offset_upper_s": 0.227367699,
+          "offset_midpoint_s": 0.213477178,
+          "batch_half_width_s": 0.013890521,
+          "reasons": []
+        }
+      },
+      "verification": "manifest_apk_uid_policy_clock_server_log_ui_csv_controls_rechecked"
+    },
+    {
+      "trial_id": "udp-hold-002",
+      "case": "udp_hold",
+      "created_utc": "2026-10-29T12:30:47.757755+00:00",
+      "app_version": "1.2",
+      "apk_sha256": "1236cb4fe9d3034c6bd5f5726d9402f0ab2f80ca9c30114c27d59fd54d3ec9d7",
+      "policy_sha256": "b6ef47322bef7539f9b46dff952a314439df5a9817d7ea9dcf8d200fa69ad7c1",
+      "archive_sha256": "7f07f273c294660013cc179cf0be8f93107b8ae8d8e9dd98f128e5a67ebc469d",
+      "uid": 10210,
+      "csv_rows": 13,
+      "candidate_rows": [
+        {
+          "line": 9,
+          "uid": 10210,
+          "package": "org.example.apkaudit.udp",
+          "bytes_sent": 46,
+          "bytes_received": 37,
+          "packets_sent": 1,
+          "packets_received": 1
+        }
+      ],
+      "identified_target_rows": 1,
+      "server_events": 1,
+      "server_body_bytes": [
+        18
+      ],
+      "app_result": "udp_sent",
+      "hold_observed_s": 2.001,
+      "wait_s": 30.005106791999424,
+      "quality": "partial",
+      "coverage_status": "operator_attested",
+      "checks": "expectations_met_under_recorded_conditions",
+      "status": "collected",
+      "recorded_problems": [],
+      "control_verification": {
+        "after": "ui_and_server_event_id",
+        "before": "ui_and_server_event_id"
+      },
+      "manifest_entries": 28,
+      "clock_summaries_recomputed": {
+        "before": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.20498524,
+          "offset_upper_s": 0.224447283,
+          "offset_midpoint_s": 0.2147162615,
+          "batch_half_width_s": 0.0097310215,
+          "reasons": []
+        },
+        "after": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.197566669,
+          "offset_upper_s": 0.22473267,
+          "offset_midpoint_s": 0.2111496695,
+          "batch_half_width_s": 0.0135830005,
+          "reasons": []
+        }
+      },
+      "verification": "manifest_apk_uid_policy_clock_server_log_ui_csv_controls_rechecked"
+    },
+    {
+      "trial_id": "udp-hold-003",
+      "case": "udp_hold",
+      "created_utc": "2026-10-29T12:32:20.835613+00:00",
+      "app_version": "1.2",
+      "apk_sha256": "1236cb4fe9d3034c6bd5f5726d9402f0ab2f80ca9c30114c27d59fd54d3ec9d7",
+      "policy_sha256": "b6ef47322bef7539f9b46dff952a314439df5a9817d7ea9dcf8d200fa69ad7c1",
+      "archive_sha256": "6aca50620d45afd23f9259a4f8c5e6a32ce05b5bc8de06a40af14b2e63a2ccc5",
+      "uid": 10210,
+      "csv_rows": 13,
+      "candidate_rows": [
+        {
+          "line": 9,
+          "uid": 10210,
+          "package": "org.example.apkaudit.udp",
+          "bytes_sent": 46,
+          "bytes_received": 37,
+          "packets_sent": 1,
+          "packets_received": 1
+        }
+      ],
+      "identified_target_rows": 1,
+      "server_events": 1,
+      "server_body_bytes": [
+        18
+      ],
+      "app_result": "udp_sent",
+      "hold_observed_s": 2.002,
+      "wait_s": 30.00508804200217,
+      "quality": "partial",
+      "coverage_status": "operator_attested",
+      "checks": "expectations_met_under_recorded_conditions",
+      "status": "collected",
+      "recorded_problems": [],
+      "control_verification": {
+        "after": "ui_and_server_event_id",
+        "before": "ui_and_server_event_id"
+      },
+      "manifest_entries": 28,
+      "clock_summaries_recomputed": {
+        "before": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.208046946,
+          "offset_upper_s": 0.22410503,
+          "offset_midpoint_s": 0.216075988,
+          "batch_half_width_s": 0.008029042,
+          "reasons": []
+        },
+        "after": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.201885498,
+          "offset_upper_s": 0.224373499,
+          "offset_midpoint_s": 0.2131294985,
+          "batch_half_width_s": 0.0112440005,
+          "reasons": []
+        }
+      },
+      "verification": "manifest_apk_uid_policy_clock_server_log_ui_csv_controls_rechecked"
+    },
+    {
+      "trial_id": "udp-long-001",
+      "case": "udp_hold",
+      "created_utc": "2026-10-29T12:47:56.711736+00:00",
+      "app_version": "1.2",
+      "apk_sha256": "1236cb4fe9d3034c6bd5f5726d9402f0ab2f80ca9c30114c27d59fd54d3ec9d7",
+      "policy_sha256": "b6ef47322bef7539f9b46dff952a314439df5a9817d7ea9dcf8d200fa69ad7c1",
+      "archive_sha256": "f64732d02adaa7627ed10e6a45eb639f00530dbd79277b9b74929b8eb8487e4d",
+      "uid": 10210,
+      "csv_rows": 17,
+      "candidate_rows": [
+        {
+          "line": 11,
+          "uid": 10210,
+          "package": "org.example.apkaudit.udp",
+          "bytes_sent": 46,
+          "bytes_received": 37,
+          "packets_sent": 1,
+          "packets_received": 1
+        }
+      ],
+      "identified_target_rows": 1,
+      "server_events": 1,
+      "server_body_bytes": [
+        18
+      ],
+      "app_result": "udp_sent",
+      "hold_observed_s": 2.001,
+      "wait_s": 30.00097458300297,
+      "quality": "partial",
+      "coverage_status": "operator_attested",
+      "checks": "expectations_met_under_recorded_conditions",
+      "status": "collected",
+      "recorded_problems": [],
+      "control_verification": {
+        "after": "ui_and_server_event_id",
+        "before": "ui_and_server_event_id"
+      },
+      "manifest_entries": 28,
+      "clock_summaries_recomputed": {
+        "before": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.210433374,
+          "offset_upper_s": 0.227286917,
+          "offset_midpoint_s": 0.2188601455,
+          "batch_half_width_s": 0.0084267715,
+          "reasons": []
+        },
+        "after": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.203432218,
+          "offset_upper_s": 0.227751219,
+          "offset_midpoint_s": 0.2155917185,
+          "batch_half_width_s": 0.0121595005,
+          "reasons": []
+        }
+      },
+      "verification": "manifest_apk_uid_policy_clock_server_log_ui_csv_controls_rechecked"
+    },
+    {
+      "trial_id": "udp-short-001",
+      "case": "udp",
+      "created_utc": "2026-10-29T12:45:02.139036+00:00",
+      "app_version": "1.1",
+      "apk_sha256": "360dc7df93299f48b9b158a48de3e1f0d7cf570b57940e1b8d16cf15e12ad359",
+      "policy_sha256": "b6ef47322bef7539f9b46dff952a314439df5a9817d7ea9dcf8d200fa69ad7c1",
+      "archive_sha256": "57eabc458f6fd8d779fc704fba3fc7abc144bd809fc1430a2f8acfd1bf0da55f",
+      "uid": 10210,
+      "csv_rows": 15,
+      "candidate_rows": [
+        {
+          "line": 11,
+          "uid": -1,
+          "package": "unknown",
+          "bytes_sent": 47,
+          "bytes_received": 37,
+          "packets_sent": 1,
+          "packets_received": 1
+        }
+      ],
+      "identified_target_rows": 0,
+      "server_events": 1,
+      "server_body_bytes": [
+        19
+      ],
+      "app_result": "udp_sent",
+      "hold_observed_s": null,
+      "wait_s": 30.001614417000383,
+      "quality": "partial",
+      "coverage_status": "operator_attested",
+      "checks": "review_required",
+      "status": "collected_needs_review",
+      "recorded_problems": [
+        "expected_target_connection_row_missing"
+      ],
+      "control_verification": {
+        "after": "ui_and_server_event_id",
+        "before": "ui_and_server_event_id"
+      },
+      "manifest_entries": 28,
+      "clock_summaries_recomputed": {
+        "before": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.180892707,
+          "offset_upper_s": 0.223899,
+          "offset_midpoint_s": 0.2023958535,
+          "batch_half_width_s": 0.0215031465,
+          "reasons": []
+        },
+        "after": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": 0.192683468,
+          "offset_upper_s": 0.221965302,
+          "offset_midpoint_s": 0.207324385,
+          "batch_half_width_s": 0.014640917,
+          "reasons": []
+        }
+      },
+      "verification": "manifest_apk_uid_policy_clock_server_log_ui_csv_controls_rechecked"
+    },
+    {
+      "trial_id": "udp-short-002",
+      "case": "udp",
+      "created_utc": "2026-10-31T01:41:24.936647+00:00",
+      "app_version": "1.1",
+      "apk_sha256": "360dc7df93299f48b9b158a48de3e1f0d7cf570b57940e1b8d16cf15e12ad359",
+      "policy_sha256": "b6ef47322bef7539f9b46dff952a314439df5a9817d7ea9dcf8d200fa69ad7c1",
+      "archive_sha256": "c88dd142703a04e4daf6a7c7dc56eef314016348f8527187c58e938fa93aa634",
+      "uid": 10210,
+      "csv_rows": 13,
+      "candidate_rows": [
+        {
+          "line": 9,
+          "uid": -1,
+          "package": "unknown",
+          "bytes_sent": 47,
+          "bytes_received": 37,
+          "packets_sent": 1,
+          "packets_received": 1
+        }
+      ],
+      "identified_target_rows": 0,
+      "server_events": 1,
+      "server_body_bytes": [
+        19
+      ],
+      "app_result": "udp_sent",
+      "hold_observed_s": null,
+      "wait_s": 30.00201258299785,
+      "quality": "partial",
+      "coverage_status": "operator_attested",
+      "checks": "review_required",
+      "status": "collected_needs_review",
+      "recorded_problems": [
+        "expected_target_connection_row_missing"
+      ],
+      "control_verification": {
+        "after": "ui_and_server_event_id",
+        "before": "ui_and_server_event_id"
+      },
+      "manifest_entries": 28,
+      "clock_summaries_recomputed": {
+        "before": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": -0.196019516,
+          "offset_upper_s": -0.12405289,
+          "offset_midpoint_s": -0.160036203,
+          "batch_half_width_s": 0.035983313,
+          "reasons": []
+        },
+        "after": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": -0.154777763,
+          "offset_upper_s": -0.128668762,
+          "offset_midpoint_s": -0.1417232625,
+          "batch_half_width_s": 0.0130545005,
+          "reasons": []
+        }
+      },
+      "verification": "manifest_apk_uid_policy_clock_server_log_ui_csv_controls_rechecked"
+    },
+    {
+      "trial_id": "udp-short-003",
+      "case": "udp",
+      "created_utc": "2026-10-31T01:43:19.479666+00:00",
+      "app_version": "1.1",
+      "apk_sha256": "360dc7df93299f48b9b158a48de3e1f0d7cf570b57940e1b8d16cf15e12ad359",
+      "policy_sha256": "b6ef47322bef7539f9b46dff952a314439df5a9817d7ea9dcf8d200fa69ad7c1",
+      "archive_sha256": "f154494c92fa934d654b12dc545db6344593488e090f674bacfb79de85866b95",
+      "uid": 10210,
+      "csv_rows": 13,
+      "candidate_rows": [
+        {
+          "line": 9,
+          "uid": -1,
+          "package": "unknown",
+          "bytes_sent": 47,
+          "bytes_received": 37,
+          "packets_sent": 1,
+          "packets_received": 1
+        }
+      ],
+      "identified_target_rows": 0,
+      "server_events": 1,
+      "server_body_bytes": [
+        19
+      ],
+      "app_result": "udp_sent",
+      "hold_observed_s": null,
+      "wait_s": 30.002975707997393,
+      "quality": "partial",
+      "coverage_status": "operator_attested",
+      "checks": "review_required",
+      "status": "collected_needs_review",
+      "recorded_problems": [
+        "expected_target_connection_row_missing"
+      ],
+      "control_verification": {
+        "after": "ui_and_server_event_id",
+        "before": "ui_and_server_event_id"
+      },
+      "manifest_entries": 28,
+      "clock_summaries_recomputed": {
+        "before": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": -0.148371487,
+          "offset_upper_s": -0.129411486,
+          "offset_midpoint_s": -0.1388914865,
+          "batch_half_width_s": 0.0094800005,
+          "reasons": []
+        },
+        "after": {
+          "status": "measured_under_batch_assumptions",
+          "offset_direction": "host_time = device_time + offset",
+          "offset_lower_s": -0.15776185,
+          "offset_upper_s": -0.128904974,
+          "offset_midpoint_s": -0.143333412,
+          "batch_half_width_s": 0.014428438,
+          "reasons": []
+        }
+      },
+      "verification": "manifest_apk_uid_policy_clock_server_log_ui_csv_controls_rechecked"
+    }
+  ],
+  "duplicate_reuploads": [
+    {
+      "trial_id": "udp-hold-002",
+      "archive_sha256": "7f07f273c294660013cc179cf0be8f93107b8ae8d8e9dd98f128e5a67ebc469d"
+    },
+    {
+      "trial_id": "udp-hold-001",
+      "archive_sha256": "7f025b5552cca66263beedd563a23680a80751c02a7dbebe5eb9e6b9480f335e"
+    },
+    {
+      "trial_id": "udp-hold-003",
+      "archive_sha256": "6aca50620d45afd23f9259a4f8c5e6a32ce05b5bc8de06a40af14b2e63a2ccc5"
+    },
+    {
+      "trial_id": "udp-short-001",
+      "archive_sha256": "57eabc458f6fd8d779fc704fba3fc7abc144bd809fc1430a2f8acfd1bf0da55f"
+    }
+  ],
+  "counts": {
+    "guided_trials": 13,
+    "manifest_references_verified": 364,
+    "http": 4,
+    "offline": 1,
+    "short_udp": 4,
+    "held_udp": 4,
+    "primary_trials": 9
+  },
+  "limitations": [
+    "Single AVD and self-authored controls; repeated trials are not independent apps",
+    "Unknown CSV UDP rows are correspondence candidates, not measured target UIDs",
+    "Short and held UDP APK versions, order, logs and body lengths differ",
+    "Endpoint clock models are conditional; acquisition continuity is operator-attested",
+    "Earlier http-004 and ui-check-001 are separate pilots, excluded from guided trial count",
+    "Additional offline repetitions remain an experimenter statement without received raw archives"
+  ]
+}

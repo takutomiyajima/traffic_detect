@@ -1,0 +1,10 @@
+﻿trial_id,case,app_version,server_received_events,app_result,expected_uid,observed_uid,observed_package,body_bytes,hold_observed_s,wait_s,quality,status
+http-test-001,http,1.1,1,http_response=200,10207,10207,org.example.apkaudit.http,19,,30.005082707997644,partial,collected
+http-test-002,http,1.1,1,http_response=200,10207,10207,org.example.apkaudit.http,19,,30.003985208000813,partial,collected
+http-test-003,http,1.1,1,http_response=200,10207,10207,org.example.apkaudit.http,19,,30.005124750001414,partial,collected
+udp-hold-001,udp_hold,1.2,1,udp_sent,10210,10210,org.example.apkaudit.udp,18,2.002,30.004307791998144,partial,collected
+udp-hold-002,udp_hold,1.2,1,udp_sent,10210,10210,org.example.apkaudit.udp,18,2.001,30.005106791999424,partial,collected
+udp-hold-003,udp_hold,1.2,1,udp_sent,10210,10210,org.example.apkaudit.udp,18,2.002,30.00508804200217,partial,collected
+udp-short-001,udp,1.1,1,udp_sent,10210,-1,unknown,19,,30.001614417000383,partial,collected_needs_review
+udp-short-002,udp,1.1,1,udp_sent,10210,-1,unknown,19,,30.00201258299785,partial,collected_needs_review
+udp-short-003,udp,1.1,1,udp_sent,10210,-1,unknown,19,,30.002975707997393,partial,collected_needs_review
