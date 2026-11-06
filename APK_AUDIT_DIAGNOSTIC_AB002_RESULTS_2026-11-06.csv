@@ -1,0 +1,5 @@
+﻿trial_id,arm,port,packets,flows,target_flows,other_flows,unknown_flows,request_packet,http_status,rss_body_bytes,static_groups,both,static_only,dynamic_only,indeterminate,clock_lower_s,clock_upper_s,quality,stop_reported_packets,packet_counter_delta,input_window_s
+trial-001-A,A,59521,124,16,1,15,0,43,200,184,38,0,38,1,0,0.28457045455114743,0.30864667892456055,partial,123,1,30.153755
+trial-002-B,B,59522,109,9,1,8,0,55,200,184,38,0,38,1,0,0.2846250524057617,0.30733513832092285,partial,109,0,30.141224
+trial-003-B,B,59522,84,8,1,6,1,53,200,184,38,0,38,1,1,0.28039359946386716,0.30671167373657227,partial,84,0,30.131947
+trial-004-A,A,59521,68,7,1,6,0,39,200,184,38,0,38,1,0,0.2846457948221435,0.3065657615661621,partial,68,0,30.158998
